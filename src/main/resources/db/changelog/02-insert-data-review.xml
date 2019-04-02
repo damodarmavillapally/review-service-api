@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="02" author="damodarreview">
+    <comment>Inserting Reviews</comment>
+    <insert tableName="review">
+      <column name="description" value="Smart TV Review"/>
+      <column name="rating" value="5"/>
+      <column name="product_id" value="1"/>
+    </insert>
+    <insert tableName="review">
+    <column name="description" value="Smart TV Review One"/>
+      <column name="rating" value="4"/>
+      <column name="product_id" value="1"/>
+    </insert>
+  </changeSet>
+</databaseChangeLog>
